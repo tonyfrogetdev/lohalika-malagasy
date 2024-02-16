@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #f4f7f6;
+}
+
+header {
+  text-align: center;
+  background: #1d1d1d;
+  color: white;
+  padding-bottom: 30px;
+}
+
+section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+section p {
+  width: 700px;
+  margin: 20px auto;
+}
+
+nav {
+  text-align: center;
+  background: white;
+  box-shadow: 0px 3px 1px -1px rgba(0, 0, 0, 0.5);
+  font-size: 1.1em;
+  padding: 15px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline;
+}
+li a {
+  color: black;
+}
+
+ul li a:hover {
+  font-weight: bold;
+  color: crimson;
+}
+
+h1 {
+  font-family: "Vary", Arial, Helvetica, sans-serif;
+
+  padding-top: 30px;
+}
+
+h1:hover {
+  color: red;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+h2 {
+  max-width: 400px;
+  font-family: "Open-Sans", sans-serif;
+  font-size: 1.5em;
+  margin: auto;
+  padding-top: 10px;
+}
+
+h3 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+h4 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
+
+footer {
+  background: #1d1d1d;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.separator {
+  width: 80px;
+  height: 1px;
+  margin: 15px auto;
+  display: block;
+  background: #999999;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* CLASS */
+
+.div-logo {
+  margin: auto;
+}
+
+.contact {
+  border: 1px black solid;
+  border-radius: 15px;
+  max-width: 700px;
+  margin: auto;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.contact img {
+  width: 25px;
+  height: 25px;
+}
+
+/* ID */
+
+#logo {
+  width: 240px;
+  height: 240px;
+  margin-top: 10px;
+}
+/* POLICES */
+
+@font-face {
+  font-family: "Vary";
+  src: url(/assets/anandapersonal.ttf) format("truetype");
+}
