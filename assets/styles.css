@@ -51,7 +51,7 @@
    * espacement
    */
 
-  --section-padding: 80px;
+  --section-padding: 100px;
 }
 
 /*-----------------------------------*\
@@ -191,10 +191,21 @@ nav {
   padding: 15px;
 }
 
+.nav-ul {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.nav-ul li a:hover {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: red;
+}
 /* HERO */
 
 .hero {
-  padding: 125px 0 var(--section-padding);
+  padding: 80px 0 var(--section-padding);
   background: var(--white);
 }
 
@@ -231,16 +242,14 @@ nav {
   margin-inline: auto;
 }
 
+/* GESTION IMAGE BANNIERE */
+.hero-banner {
+  perspective: 1000px;
+}
+
 .hero-banner img {
   width: 100%;
   border-radius: 5%;
-}
-
-ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  gap: 10px;
 }
 
 footer {
@@ -267,6 +276,7 @@ POSSIBILITER QUE CE SOIT PLUS UTILE SUR FINREC | SEERIC ET VIALEGIS */
 
 .about {
   padding-block: var(--section-padding);
+  background: var(--ghost-white-1);
 }
 
 .about-content {
@@ -356,7 +366,100 @@ POSSIBILITER QUE CE SOIT PLUS UTILE SUR FINREC | SEERIC ET VIALEGIS */
 .about-card:hover .card-text {
   color: var(--white);
 }
+/* VIDEOS */
 
+.videos {
+  padding-block: var(--section-padding);
+  background: var(--white);
+}
+
+.videos .section-title {
+  margin-bottom: 15px;
+}
+
+.videos .section-text {
+  margin-bottom: 60px;
+}
+
+.videos-wrapper:not(:last-child) {
+  margin-bottom: 80px;
+}
+
+.videos-banner {
+  margin-bottom: 35px;
+}
+
+.videos-banner img {
+  width: 100%;
+  border-radius: 5%;
+}
+
+.videos-content-subtitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: var(--fs-5);
+  color: var(--eerie-black);
+  margin-bottom: 20px;
+}
+
+.videos-content-subtitle span {
+  font-size: 1.2rem;
+}
+
+.videos-content-subtitle ion-icon {
+  color: var(--redMalagasy);
+  font-size: 20px;
+}
+
+.videos-content-title {
+  font-size: var(--fs-2);
+  font-family: var(--ff-mulish);
+  color: var(--independence);
+  font-weight: var(--fw-600);
+  margin-bottom: 25px;
+}
+
+.videos-content-title strong {
+  font-weight: var(--fw-700);
+}
+
+.videos-content-text {
+  font-size: var(--fs-6);
+  color: var(--cool-gray);
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.videos-list {
+  margin-bottom: 40px;
+}
+
+.videos-list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+  font-size: var(--fs-5);
+  color: black;
+  margin-bottom: 10px;
+}
+
+.videos-list-item ion-icon {
+  font-size: 23px;
+  color: var(--redMalagasy);
+}
+
+.videos-list-item p {
+  width: calc(100% - 28px);
+}
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
 /* CLASS */
 
 .div-logo {
@@ -364,22 +467,29 @@ POSSIBILITER QUE CE SOIT PLUS UTILE SUR FINREC | SEERIC ET VIALEGIS */
 }
 
 .contact {
+  display: flex;
+  justify-content: space-between;
   border: 1px black solid;
   border-radius: 15px;
-  max-width: 700px;
+  max-width: 300px;
   margin: auto;
   padding: 30px;
   margin-bottom: 20px;
 }
 
-.contact p {
-  display: flex;
+.contact h4 {
+  margin-top: 20px;
 }
 
+.contact p {
+  display: none;
+}
+
+.contact a,
 .contact img {
-  width: 25px;
-  height: 25px;
-  margin: 5px;
+  display: block;
+  width: 50px;
+  height: 50px;
 }
 
 /* ID */
@@ -494,7 +604,7 @@ POSSIBILITER QUE CE SOIT PLUS UTILE SUR FINREC | SEERIC ET VIALEGIS */
      */
 
   .container {
-    max-width: 950px;
+    max-width: 1250px;
   }
 
   .section-text {
@@ -589,10 +699,10 @@ POSSIBILITER QUE CE SOIT PLUS UTILE SUR FINREC | SEERIC ET VIALEGIS */
   }
 
   /**
-     * Entreprises
+     * VIDEOS
      */
 
-  .entreprises-wrapper {
+  .videos-wrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 90px;
@@ -600,16 +710,16 @@ POSSIBILITER QUE CE SOIT PLUS UTILE SUR FINREC | SEERIC ET VIALEGIS */
     justify-content: space-between;
   }
 
-  .entreprises-wrapper > * {
+  .videos-wrapper > * {
     flex: 1;
   }
 
-  .entreprises-wrapper:nth-child(4),
-  .entreprises-wrapper:nth-child(6) {
+  .videos-wrapper:nth-child(4),
+  .videos-wrapper:nth-child(6) {
     flex-direction: row-reverse;
   }
 
-  .entreprises-wrapper:not(:last-child) {
+  .videos-wrapper:not(:last-child) {
     margin-bottom: 100px;
   }
 
@@ -648,25 +758,48 @@ POSSIBILITER QUE CE SOIT PLUS UTILE SUR FINREC | SEERIC ET VIALEGIS */
   /**
      * HERO
      */
+  .hero {
+    padding: 100px 0 var(--section-padding);
+  }
 
   .hero .container {
     gap: 150px;
   }
 
   /**
-     * Entreprises
+     * VIDEOS
      */
-  .entreprises-banner img {
+  .videos-banner img {
     transition: transform 0.3s ease; /* Animation douce */
     cursor: pointer; /* Change le curseur en main lors du survol */
   }
 
-  .entreprises-banner:hover img {
+  .videos-banner:hover img {
     transform: scale(1.1); /* Grossit l'image de 10% lors du survol */
   }
+  /* CONTACT*/
+  .contact {
+    border: 1px black solid;
+    border-radius: 15px;
+    max-width: 750px;
+    margin: auto;
+    padding: 30px;
+    margin-bottom: 20px;
+  }
+  .contact h4 {
+    margin-top: 20px;
+  }
+  .contact p {
+    display: block;
+    margin-top: 20px;
+  }
 
+  .contact img {
+    width: 50px;
+    height: 50px;
+  }
   /**
-     * foote
+     * footer
      */
 
   .footer-link-box {
