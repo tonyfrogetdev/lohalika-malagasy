@@ -460,6 +460,42 @@ POSSIBILITER QUE CE SOIT PLUS UTILE SUR FINREC | SEERIC ET VIALEGIS */
   align-items: flex-start;
   gap: 10px;
 }
+
+/* Animations pour les sections */
+
+.hiddenUp {
+  opacity: 0;
+  transform: translateY(25%);
+  transition: ease-in 0.5s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hiddenLeft {
+  opacity: 0;
+  transform: translateX(-25%);
+  transition: ease-in 0.5s;
+}
+
+.showLeft {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.hiddenRight {
+  opacity: 0;
+  transform: translateX(25%);
+  transition: ease-in 0.5s;
+}
+
+.showRight {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
 /* CLASS */
 
 .div-logo {
