@@ -177,10 +177,9 @@
             </p>
 
             <div class="videos-wrapper hiddenLeft">
-              <figure class="videos-banner">
-                <img src="/assets/ligamentcroisé.PNG" alt="finrec logo" />
+              <figure class="videos-banner" data-video-id="MLaGFKOBANg">
+                <img src="/assets/ligamentcroisé.PNG" alt="Exercice mobilité 1"/>
               </figure>
-
               <div class="videos-content">
                 <p class="videos-content-subtitle">
                   <ion-icon name="sparkles"></ion-icon>
@@ -221,10 +220,9 @@
             </div>
 
             <div class="videos-wrapper hiddenRight">
-              <figure class="videos-banner">
-                <img src="/assets/ligamentcroisé.PNG" alt="seeric logo" />
+              <figure class="videos-banner" data-video-id="MLaGFKOBANg">
+                <img src="/assets/ligamentcroisé.PNG" alt="Exercice mobilité 1"/>
               </figure>
-
               <div class="videos-content">
                 <p class="videos-content-subtitle">
                   <ion-icon name="sparkles"></ion-icon>
@@ -265,11 +263,8 @@
             </div>
 
             <div class="videos-wrapper hiddenLeft">
-              <figure class="videos-banner">
-                <img
-                  src="/assets/ligamentcroisé.PNG"
-                  alt="saintlouisrecouvrement logo"
-                />
+              <figure class="videos-banner" data-video-id="MLaGFKOBANg">
+                <img src="/assets/ligamentcroisé.PNG" alt="Exercice mobilité 1"/>
               </figure>
 
               <div class="videos-content">
@@ -312,10 +307,9 @@
             </div>
 
             <div class="videos-wrapper hiddenRight">
-              <figure class="videos-banner">
-                <img src="./assets/ligamentcroisé.PNG"alt=vialegis logo" />
+              <figure class="videos-banner" data-video-id="MLaGFKOBANg">
+                <img src="/assets/ligamentcroisé.PNG" alt="Exercice mobilité 1"/>
               </figure>
-
               <div class="videos-content">
                 <p class="videos-content-subtitle">
                   <ion-icon name="sparkles"></ion-icon>
@@ -388,8 +382,17 @@
       <p>voici l'étape 3 :</p>
     </div>
    </div>
+ 
+   <div id="videoModal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <iframe id="youtubeVideo" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+
 
     <script src="./animations.js"></script>
     <script src="./popUp.js"></script>
+    <script src="./modal.js"></script>
   </body>
 </html>
