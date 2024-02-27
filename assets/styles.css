@@ -6,21 +6,13 @@
   /**
    * couleurs
    */
-
-  --raisin-black-2: hsl(245, 16%, 16%);
-  --raisin-black-1: hsl(244, 17%, 19%);
-  --majorelle-blue: hsl(219, 79%, 66%);
-  --ghost-white-1: hsl(240, 100%, 99%);
-  --ghost-white-2: hsl(228, 50%, 96%);
-  --white-opacity: hsla(0, 0%, 100%, 0.5);
-  --independence: hsl(245, 17%, 27%);
-  --lavender-web: hsl(247, 69%, 95%);
-  --eerie-black: hsl(210, 11%, 15%);
-  --cool-gray: hsl(244, 17%, 61%);
-  --sapphire: hsl(211, 100%, 35%);
   --white: hsl(0, 0%, 100%);
   --redMalagasy: hsla(357, 90%, 55%, 0.955);
   --greenMalagasy: hsl(120, 61%, 50%);
+  --ghost-white-1: hsl(240, 100%, 99%);
+  --ghost-white-2: hsl(228, 50%, 96%);
+  --white-opacity: hsla(0, 0%, 100%, 0.5);
+  --cool-gray: hsl(244, 17%, 61%);
 
   /**
    * Style d'écriture
@@ -456,8 +448,8 @@ POSSIBILITER QUE CE SOIT PLUS UTILE SUR FINREC | SEERIC ET VIALEGIS */
 .btn-group {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
 }
 
@@ -520,6 +512,7 @@ POSSIBILITER QUE CE SOIT PLUS UTILE SUR FINREC | SEERIC ET VIALEGIS */
 
 .popup-content h2 {
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .close-popup {
@@ -874,6 +867,9 @@ POSSIBILITER QUE CE SOIT PLUS UTILE SUR FINREC | SEERIC ET VIALEGIS */
     gap: 150px;
   }
 
+  .popup-content {
+    width: 680px;
+  }
   /**
      * VIDEOS
      */
@@ -884,6 +880,14 @@ POSSIBILITER QUE CE SOIT PLUS UTILE SUR FINREC | SEERIC ET VIALEGIS */
 
   .videos-banner:hover img {
     transform: scale(1.1); /* Grossit l'image de 10% lors du survol */
+  }
+
+  .btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
   }
   /* CONTACT*/
   .contact {
