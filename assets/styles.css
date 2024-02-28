@@ -98,6 +98,8 @@ html {
 
 body {
   background: var(--white);
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /* re-used style*/
@@ -313,7 +315,6 @@ POSSIBILITER QUE CE SOIT PLUS UTILE SUR FINREC | SEERIC ET VIALEGIS */
 
 .about-card:hover {
   background: var(--redMalagasy);
-
   transform: translateY(-5px);
   box-shadow: 0 5px 18px hsla(245, 85%, 63%, 0.4);
 }
