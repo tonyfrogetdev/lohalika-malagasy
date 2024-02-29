@@ -43,12 +43,10 @@
    * espacement
    */
 
-  --section-padding: 100px;
+  --section-padding: 40px;
 }
 
-/*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
+/*reset*/
 
 *,
 *::before,
@@ -108,7 +106,6 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
-/* re-used style*/
 
 .container {
   padding-inline: 15px;
@@ -183,7 +180,9 @@ header {
   color: white;
   padding-bottom: 30px;
 }
-
+header h1 {
+  padding-top: 30px;
+}
 nav {
   background: white;
   box-shadow: 0px 3px 1px -1px rgba(0, 0, 0, 0.5);
@@ -196,7 +195,10 @@ nav {
   justify-content: center;
   gap: 10px;
 }
-
+.nav-ul li a {
+  text-decoration: none;
+  color: #aaa;
+}
 .nav-ul li a:hover {
   font-size: 1.2rem;
   font-weight: 600;
@@ -205,12 +207,12 @@ nav {
 /* HERO */
 
 .hero {
-  padding: 80px 0 var(--section-padding);
+  padding: 40px 0;
   background: var(--white);
 }
 
 .hero-content {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
 .hero-title {
@@ -219,7 +221,6 @@ nav {
 
 .hero-text {
   color: var(--cool-gray);
-
   font-size: var(--fs-4);
   font-weight: var(--fw-500);
   line-height: 1.8;
@@ -231,15 +232,9 @@ nav {
   font-weight: var(--fw-800);
   color: var(--redMalagasy);
 }
-.form-text {
-  color: var(--independence);
-  font-weight: var(--fw-500);
-  line-height: 1.8;
-  margin-bottom: 20px;
-}
 
-.hero .btn-primary {
-  margin-inline: auto;
+.hero .btn-style {
+  margin: auto;
 }
 
 /* GESTION IMAGE BANNIERE */
@@ -270,9 +265,6 @@ footer {
 a {
   text-decoration: none;
 }
-
-/* ABOUT 
-POSSIBILITER QUE CE SOIT PLUS UTILE SUR FINREC | SEERIC ET VIALEGIS */
 
 .about {
   padding-block: var(--section-padding);
@@ -364,6 +356,10 @@ POSSIBILITER QUE CE SOIT PLUS UTILE SUR FINREC | SEERIC ET VIALEGIS */
 
 .about-card:hover .card-text {
   color: var(--white);
+}
+
+.about .btn-style {
+  margin: auto;
 }
 /* VIDEOS */
 
@@ -511,7 +507,7 @@ POSSIBILITER QUE CE SOIT PLUS UTILE SUR FINREC | SEERIC ET VIALEGIS */
 
 .popup-content {
   background-color: white;
-  padding: 20px;
+  padding: 50px;
   border: 1px solid black;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -520,6 +516,18 @@ POSSIBILITER QUE CE SOIT PLUS UTILE SUR FINREC | SEERIC ET VIALEGIS */
 .popup-content h2 {
   text-align: center;
   margin-bottom: 10px;
+}
+.popup-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-text p {
+  margin-bottom: 10px;
+}
+
+.popup-text p:last-child {
+  margin-bottom: 0;
 }
 
 .close-popup {
@@ -620,13 +628,6 @@ POSSIBILITER QUE CE SOIT PLUS UTILE SUR FINREC | SEERIC ET VIALEGIS */
 
 @media (min-width: 450px) {
   /* HERO */
-
-  .hero .btn-primary {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    padding-block: 12.5px;
-  }
 
   /* ABOUT */
 
@@ -804,7 +805,9 @@ POSSIBILITER QUE CE SOIT PLUS UTILE SUR FINREC | SEERIC ET VIALEGIS */
   .about-list li:nth-child(odd) {
     transform: translateY(50px);
   }
-
+  .about .btn-style {
+    margin: 0;
+  }
   /**
      * VIDEOS
      */
@@ -876,60 +879,262 @@ POSSIBILITER QUE CE SOIT PLUS UTILE SUR FINREC | SEERIC ET VIALEGIS */
     gap: 150px;
   }
 
+  .hero .btn-style {
+    margin: 0;
+  }
+
   .popup-content {
     width: 680px;
-  }
-  /**
+
+    /**
      * VIDEOS
      */
 
-  .videos-banner img {
-    width: 80%;
-    transition: transform 0.3s ease; /* Animation douce */
-    cursor: pointer; /* Change le curseur en main lors du survol */
-  }
+    .videos-banner img {
+      width: 80%;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
 
-  .videos-banner:hover img {
-    transform: scale(1.1); /* Grossit l'image de 10% lors du survol */
-  }
+    .videos-banner:hover img {
+      transform: scale(1.1);
+    }
 
-  .btn-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 10px;
-  }
-  /* CONTACT*/
-  .contact {
-    border: 1px black solid;
-    border-radius: 15px;
-    max-width: 750px;
-    margin: auto;
-    padding: 30px;
-    margin-bottom: 20px;
-  }
-  .contact h4 {
-    margin-top: 20px;
-  }
-  .contact p {
-    display: block;
-    margin-top: 20px;
-  }
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    /* CONTACT*/
+    .contact {
+      border: 1px black solid;
+      border-radius: 15px;
+      max-width: 750px;
+      margin: auto;
+      padding: 30px;
+      margin-bottom: 20px;
+    }
+    .contact h4 {
+      margin-top: 20px;
+    }
+    .contact p {
+      display: block;
+      margin-top: 20px;
+    }
 
-  .contact img {
-    width: 50px;
-    height: 50px;
-  }
-  /**
+    .contact img {
+      width: 50px;
+      height: 50px;
+    }
+    /**
      * footer
      */
 
-  .footer-link-box {
-    margin-right: 40px;
+    .footer-link-box {
+      margin-right: 40px;
+    }
+
+    .footer-list {
+      width: 170px;
+    }
   }
 
-  .footer-list {
-    width: 170px;
+  @media (min-width: 2200px) {
+    /* HEADER */
+    header h1 {
+      padding-top: 30px;
+      font-size: 4rem;
+    }
+
+    header h2 {
+      font-size: 3rem;
+    }
+
+    .separator {
+      width: 180px;
+      height: 4px;
+      margin: 15px auto;
+      display: block;
+      background: #c8c8c8;
+    }
+    nav {
+      font-size: 2rem;
+    }
+
+    .nav-ul {
+      gap: 60px;
+    }
+
+    .nav-ul li a:hover {
+      font-size: 2.5rem;
+    }
+
+    .container {
+      max-width: 2000px;
+    }
+
+    .hero-title {
+      font-size: 3rem;
+    }
+
+    .hero-text {
+      color: var(--cool-gray);
+      font-size: 2rem;
+      font-weight: var(--fw-500);
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+    .knee-word {
+      text-transform: uppercase;
+      font-size: 4rem;
+      font-weight: var(--fw-800);
+      color: var(--redMalagasy);
+    }
+    .hero .btn-style {
+      font-size: 2rem;
+    }
+
+    .hero-banner img {
+      width: 150%;
+      border-radius: 5%;
+    }
+
+    /* ABOUT */
+
+    .about-content {
+      width: 50%;
+    }
+
+    .about-icon {
+      width: 160px;
+      height: 160px;
+      font-size: 4rem;
+    }
+
+    .about-title {
+      font-size: 3rem;
+    }
+
+    .about-text {
+      font-size: 2rem;
+    }
+
+    .about-list {
+      gap: 40px;
+    }
+
+    .about-card .card-icon {
+      width: 160px;
+      height: 160px;
+      font-size: 4rem;
+    }
+
+    .about-card .card-title {
+      font-size: 3rem;
+    }
+
+    .about-card .card-text {
+      font-size: 1.5rem;
+    }
+
+    /* VIDEOS */
+
+    .videos .section-title {
+      font-size: 4rem;
+    }
+
+    .videos .section-text {
+      font-size: 3rem;
+      max-width: 1450px;
+    }
+
+    .videos-content-subtitle span {
+      font-size: 3rem;
+    }
+
+    .videos-content-subtitle ion-icon {
+      font-size: 60px;
+    }
+
+    .videos-content-title {
+      font-size: 3rem;
+    }
+
+    .videos-content-text {
+      font-size: 2rem;
+    }
+
+    .videos-list-item {
+      font-size: 2rem;
+    }
+    .videos-list-item ion-icon {
+      font-size: 46px;
+    }
+    .videos-banner img {
+      width: 80%;
+      border-radius: 5%;
+      margin: 30px;
+    }
+    .btn-style {
+      font-size: 2rem;
+      border: 3px solid;
+    }
+
+    /*gestion de la pop up*/
+
+    .popup-content {
+      width: 70%;
+      font-size: 2rem;
+    }
+
+    /* gestion des vidéos */
+
+    .modal-content {
+      margin: 5% auto;
+      padding: 20px;
+    }
+
+    .close-modal {
+      color: white;
+      float: right;
+      font-size: 80px;
+      font-weight: bold;
+    }
+
+    .close-modal:hover,
+    .close-modal:focus {
+      color: var(--redMalagasy);
+    }
+
+    #youtubeVideo {
+      margin: auto;
+      width: 100%;
+      height: 1400px;
+    }
+
+    /* CLASS */
+
+    .contact {
+      max-width: 1400px;
+      font-size: 2rem;
+    }
+
+    .contact a,
+    .contact img {
+      display: block;
+      width: 100px;
+      height: 100px;
+    }
+
+    /* ID */
+
+    #logo {
+      margin: auto;
+      width: 500px;
+      height: 500px;
+      margin-top: 10px;
+    }
   }
 }
