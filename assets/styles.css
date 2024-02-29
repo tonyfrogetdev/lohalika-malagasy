@@ -379,10 +379,23 @@ a {
   margin-bottom: 35px;
   cursor: pointer;
 }
+.videos-banner span {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
 .videos-banner img {
   width: 100%;
   border-radius: 5%;
+  filter: blur(2px);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .videos-content-subtitle {
@@ -900,6 +913,10 @@ a {
     justify-content: flex-start;
     align-items: flex-start;
     gap: 10px;
+  }
+
+  .videos-banner span {
+    display: none;
   }
   /* CONTACT*/
 
