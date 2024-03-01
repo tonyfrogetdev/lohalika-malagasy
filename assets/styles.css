@@ -177,6 +177,7 @@ header {
 }
 header h1 {
   padding-top: 30px;
+  font-size: 1.5rem;
 }
 nav {
   background: white;
@@ -264,6 +265,7 @@ a {
 .about {
   padding-block: var(--section-padding);
   background: var(--ghost-white-1);
+  margin-bottom: 20px;
 }
 
 .about-content {
@@ -620,8 +622,8 @@ a {
 
 #logo {
   margin: auto;
-  width: 240px;
-  height: 240px;
+  width: 150px;
+  height: 150px;
   margin-top: 10px;
 }
 /* POLICES */
@@ -872,7 +874,9 @@ a {
   /**
      * re-used
      */
-
+  header h1 {
+    font-size: 2rem;
+  }
   .container {
     max-width: 1200px;
   }
